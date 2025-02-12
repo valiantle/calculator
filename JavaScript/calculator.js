@@ -1,8 +1,13 @@
 let outputRow = "";
 
 function addNum(number) {
-    outputRow += number;
+    outputRow = outputRow + number;
     document.getElementById("Poutput").innerText = outputRow;
+}
+function delNum(number) {
+    outputRow = outputRow.slice(0, -1)
+    document.getElementById("Poutput").innerText = outputRow;
+    
 }
 
 function clearRow() {
