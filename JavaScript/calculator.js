@@ -1,12 +1,24 @@
-function add (a, b) {
-    return a + b
+function add() {
+    let number1 = parseFloat(document.getElementById("Num1").value);
+    let number2 = parseFloat(document.getElementById("Num2").value);
+    let summe = number1 + number2;
+    document.getElementById("result").innerText = "Ergebnis: " + summe;
 }
-function min (a, b) {
-    return a - b
+function mult() {
+    let number1 = parseFloat(document.getElementById("Num1").value);
+    let number2 = parseFloat(document.getElementById("Num2").value);
+    let multres = number1 * number2;
+    document.getElementById("result").innerText = "Ergebnis: " + multres;
 }
-function mult (a, b) {
-    return a * b;
+function sub() {
+    let number1 = parseFloat(document.getElementById("Num1").value);
+    let number2 = parseFloat(document.getElementById("Num2").value);
+    let subres = number1 - number2;
+    document.getElementById("result").innerText = "Ergebnis: " + subres;
 }
-function div (a, b) {
-    return a / b;
+function divide() {
+    let number1 = parseFloat(document.getElementById("Num1").value)
+    let number2 = parseFloat(document.getElementById("Num2").value)
+    let divres = number1 / number2;
+    document.getElementById("result").innerText = "Ergebnis: " + divres;
 }
