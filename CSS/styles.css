@@ -20,8 +20,11 @@
     height: 25px;
     width: auto;
 }
-
-
+p {
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
 /* tHEAD<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /*tBODY>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -60,5 +63,7 @@ button:hover {
 .notnumber {
     background-color: #cfd7df;
 }
-
+#buttequal {
+    height: 57px !important;
+}
 /*tBODY>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
