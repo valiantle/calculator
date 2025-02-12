@@ -3,25 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>windowscalculator</title>
+
     <link rel="stylesheet" href="CSS/styles.css">
-    <!-- <script src="JavaScript/calculator.js"></script> -->
+
 </head>
 <body>
-    <div id="calc">
-        <h1>Taschenrechner</h1>
-        <input type="number" id="Num1" placeholder="-&infin;  -  &infin;">
-        <input type="number" id="Num2" placeholder="-&infin;  -  &infin;">
-        
+    
+    <table>
 
-        <div id="butt">
-            <button class="bt" onclick="add()">Addition</button>
-            <button class="bt" onclick="sub()">Subtraktion</button>
-            <button class="bt" onclick="mult()">Multiplication</button>
-            <button class="bt" onclick="divide()">Division</button>
-        </div>
-        <h2 id="result">Ergebnis: </h2>
-    </div>
+        <tr>
+            <th colspan="5" id="tablehead1">1</th><!--кэш в который переходит первое введенное число после нажатия кнопки действия по типу ПЛЮС МИНУС ДЕЛЕНИЕ-->
+        </tr>
+        <tr id="tablehead2">
+            <th colspan="5" id="tablehead2">2</th><!--при нажатии кнопки действия переводит введенное число в верхнюю строку сохраняя число + действие функции которой было переведено-->
+        </tr>
+
+
+        <tr>
+            <td><button id="" class="notnumber">MC</button></td>
+            <td><button id="" class="notnumber">MR</button></td>
+            <td><button id="" class="notnumber">MS</button></td>
+            <td><button id="" class="notnumber">M+</button></td>
+            <td><button id="" class="notnumber">M-</button></td>
+        </tr>
+        <tr>
+            <td><button id="" class="notnumber">&#8592;</button></td>
+            <td><button id="" class="notnumber">CE</button></td>
+            <td><button id="" class="notnumber">C</button></td>
+            <td><button id="" class="notnumber">&#177;</button></td>
+            <td><button id="" class="notnumber">&radic;</button></td>
+        </tr>
+        <tr>
+            <td><button id="button7" class="numbers">7</button></td>
+            <td><button id="button8" class="numbers">8</button></td>
+            <td><button id="button9" class="numbers">9</button></td>
+            <td><button id="" class="notnumber">/</button></td>
+            <td><button id="" class="notnumber">%</button></td>
+        </tr>
+        <tr>
+            <td><button id="button4" class="numbers">4</button></td>
+            <td><button id="button5" class="numbers">5</button></td>
+            <td><button id="button6" class="numbers">6</button></td>
+            <td><button id="" class="notnumber">*</button></td>
+            <td><button id="" class="notnumber">1/x</button></td>
+        </tr>
+        <tr>
+            <td><button id="button1" class="numbers">1</button></td>
+            <td><button id="button2" class="numbers">2</button></td>
+            <td><button id="button3" class="numbers">3</button></td>
+            <td><button id="" class="notnumber">-</button></td>
+            <td rowspan="2"><button id="" class="notnumber">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="button0" class="numbers">0</button></td>
+            <td><button id="" class="numbers">,</button></td>
+            <td><button id="" class="notnumber">+</button></td>
+
+        </tr>
+    </table>
 
     <script src="JavaScript/calculator.js"></script>
 </body>
