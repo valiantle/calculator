@@ -18,6 +18,8 @@
     border-bottom-right-radius: 3px;
     /* border-collapse: top; */
     /* margin-top: none; */
+    /* margin-top: -15px; */
+    /* padding-top: -15px; */
 }
 #tablehead1, #tablehead2 {
     text-align: end;

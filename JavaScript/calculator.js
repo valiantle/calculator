@@ -5,13 +5,16 @@ function addNum(number) {
     document.getElementById("Poutput").innerText = outputRow;
 }
 function delNum(number) {
-    outputRow = outputRow.slice(0, -1)
+    outputRow = outputRow.slice(0, -1);                                 //slice(start, end)
     document.getElementById("Poutput").innerText = outputRow;
     
 }
-
 function clearRow() {
-    document.getElementById("Poutput").innerText = "";
+    outputRow = outputRow.slice(0, 0);
+    document.getElementById("Poutput").innerText = outputRow;
 }
-// текст заменяется проблемо но не исчезает на совсем почемуто ????
-// текст заменяется проблемо но не исчезает на совсем почемуто ????
+
+// function clearRow() {
+//     document.getElementById("Poutput").innerText = "  ";
+// }
+// gg easy
