@@ -13,10 +13,10 @@
     <table>
 
         <tr>
-            <th colspan="5" id="tablehead1"></th><!--кэш в который переходит первое введенное число после нажатия кнопки действия по типу ПЛЮС МИНУС ДЕЛЕНИЕ-->
+            <th colspan="5" id="tablehead1"><span id="output2"></span></th><!--кэш в который переходит первое введенное число после нажатия кнопки действия по типу ПЛЮС МИНУС ДЕЛЕНИЕ-->
         </tr>
         <tr id="tablehead2">
-            <th colspan="5" id="tablehead2"><p id="Poutput"></p></th><!--при нажатии кнопки действия переводит введенное число в верхнюю строку сохраняя число + действие функции которой было переведено-->
+            <th colspan="5" id="tablehead2"><span id="output1"></span></th><!--при нажатии кнопки действия переводит введенное число в верхнюю строку сохраняя число + действие функции которой было переведено-->
         </tr>
 
 
@@ -30,35 +30,35 @@
         <tr>
             <td><button onclick="delNum()" class="notnumber">&#8592;</button></td>
             <td><button onclick="clearRow()" class="notnumber">CE</button></td>
-            <td><button onclick="" class="notnumber">C</button></td>
+            <td><button onclick="clearAll()" class="notnumber">C</button></td>
             <td><button onclick="" class="notnumber">&#177;</button></td>
-            <td><button onclick="" class="notnumber">&radic;</button></td>
+            <td><button onclick="moveSqu()" class="notnumber">&radic;</button></td>
         </tr>
         <tr>
             <td><button onclick="addNum(7)" class="numbers">7</button></td>
             <td><button onclick="addNum(8)" class="numbers">8</button></td>
             <td><button onclick="addNum(9)" class="numbers">9</button></td>
-            <td><button onclick="" class="notnumber">/</button></td>
+            <td><button onclick="moveDiv()" class="notnumber">/</button></td>
             <td><button onclick="" class="notnumber">%</button></td>
         </tr>
         <tr>
             <td><button onclick="addNum(4)" id="button4" class="numbers">4</button></td>
             <td><button onclick="addNum(5)" class="numbers">5</button></td>
             <td><button onclick="addNum(6)" class="numbers">6</button></td>
-            <td><button onclick="" class="notnumber">*</button></td>
+            <td><button onclick="moveMul()" class="notnumber">*</button></td>
             <td><button onclick="" class="notnumber">1/x</button></td>
         </tr>
         <tr>
             <td><button onclick="addNum(1)" class="numbers">1</button></td>
             <td><button onclick="addNum(2)" class="numbers">2</button></td>
             <td><button onclick="addNum(3)" class="numbers">3</button></td>
-            <td><button onclick="" class="notnumber">-</button></td>
-            <td rowspan="2" id="buttequal"><button onclick="" class="notnumber">=</button></td>
+            <td><button onclick="moveMin()" class="notnumber">-</button></td>
+            <td rowspan="2" id="buttequal"><button onclick="searchFor()" class="notnumber">=</button></td>
         </tr>
         <tr>
             <td colspan="2" id="buttzero"><button onclick="addNum(0)" class="numbers">0</button></td>
             <td><button onclick="" class="numbers">,</button></td>
-            <td><button onclick="" class="notnumber">+</button></td>
+            <td><button onclick="movePlus()" class="notnumber">+</button></td>
 
         </tr>
     </table>
